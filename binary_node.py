@@ -32,15 +32,15 @@ def inorder_traversal(self):
         inorder_traversal(self.left)
         print(self.val, end =" ")
         inorder_traversal(self.right)
-
-if __name__ == '__main__':
-
-    tree = Binary_Node(50)
-    tree = insert_node(tree, 30)
-    tree = insert_node(tree, 20)
-    tree = insert_node(tree, 40)
-    tree = insert_node(tree, 70)
-    tree = insert_node(tree, 60)
-    tree = insert_node(tree, 80)
-    inorder_traversal(tree)
-    print(search_node(tree, 40))
+        
+def preorder_traversal(self):
+    if self:
+        print(self.val),
+        preorder_traversal(self.left)
+        preorder_traversal(self.right)
+        
+def postorder_traversal(self):
+    if self:
+        postorder_traversal(self.left)
+        postorder_traversal(self.right)
+        print(self.val),
